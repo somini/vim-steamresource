@@ -12,7 +12,7 @@ syn region srString start=+"+  skip=+\\\\\|\\"+  end=+"+ contains=srOperator,srN
 syn match srNumber "\-\?\<\d\+\>"
 syn match srCoordinate "\<[xy]\d\+\>"
 
-syn match srOption "^\s*\"\?\zs\(\w\|[-_]\)\+\ze\"\?\s*\(=\|\"\|{.*}\|\n\s*{\)"
+syn match srOption "^\s*\"\?\zs\(\w\|[-_]\)\+\ze\"\?\s*\(=\|\"\|{.*}\?\|\n\s*{\)"
 
 syn match srOperator ",\|(\|)\|=\|{\|}"
 
